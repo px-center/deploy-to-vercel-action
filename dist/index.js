@@ -15896,6 +15896,10 @@ const context = {
 		key: [ 'GH_PAT', 'GITHUB_TOKEN' ],
 		required: true
 	}),
+	VERCEL_USER: parser.getInput({
+		key: 'VERCEL_USER',
+		required: false,
+	}),
 	VERCEL_TOKEN: parser.getInput({
 		key: 'VERCEL_TOKEN',
 		required: true
@@ -16250,6 +16254,7 @@ const {
 	BUILD_ENV,
 	PREBUILT,
 	WORKING_DIRECTORY,
+	VERCEL_USER,
 	FORCE
 } = __nccwpck_require__(4570)
 
@@ -16281,7 +16286,7 @@ const init = () => {
 
 		if (commit) {
 			const metadata = [
-				`githubCommitAuthorName=${ commit.authorName }`,
+				`githubCommitAuthorName=${ VERCEL_USER ?? commit.authorName }`,
 				`githubCommitAuthorLogin=${ commit.authorLogin }`,
 				`githubCommitMessage=${ TRIM_COMMIT_MESSAGE ? commit.commitMessage.split(/\r?\n/)[0] : commit.commitMessage }`,
 				`githubCommitOrg=${ USER }`,
