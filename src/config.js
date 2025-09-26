@@ -10,7 +10,7 @@ const context = {
 		key: [ 'GH_PAT', 'GITHUB_TOKEN' ],
 		required: true
 	}),
-	GITHUB_USER: parser.getInput({
+	VERCEL_USER: parser.getInput({
 		key: [ 'GITHUB_USER' ],
 		required: false,
 	}),

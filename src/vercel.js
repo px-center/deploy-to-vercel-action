@@ -16,7 +16,7 @@ const {
 	BUILD_ENV,
 	PREBUILT,
 	WORKING_DIRECTORY,
-	GITHUB_USER,
+	VERCEL_USER,
 	FORCE
 } = require('./config')
 
@@ -48,7 +48,7 @@ const init = () => {
 
 		if (commit) {
 			const metadata = [
-				`githubCommitAuthorName=${ GITHUB_USER ?? commit.authorName }`,
+				`githubCommitAuthorName=${ VERCEL_USER ?? commit.authorName }`,
 				`githubCommitAuthorLogin=${ commit.authorLogin }`,
 				`githubCommitMessage=${ TRIM_COMMIT_MESSAGE ? commit.commitMessage.split(/\r?\n/)[0] : commit.commitMessage }`,
 				`githubCommitOrg=${ USER }`,
