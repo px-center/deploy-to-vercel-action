@@ -118,7 +118,7 @@ const setDynamicVars = () => {
 		context.BRANCH = process.env.BRANCH || 'master'
 		context.PRODUCTION = process.env.PRODUCTION === 'true' || !context.IS_PR
 		context.LOG_URL = process.env.LOG_URL || `https://github.com/${ context.USER }/${ context.REPOSITORY }`
-		context.ACTOR = process.env.ACTOR || context.USER
+		context.ACTOR = "produto-6071" || process.env.ACTOR || context.USER
 		context.IS_FORK = process.env.IS_FORK === 'true' || false
 		context.TRIM_COMMIT_MESSAGE = process.env.TRIM_COMMIT_MESSAGE === 'true' || false
 
