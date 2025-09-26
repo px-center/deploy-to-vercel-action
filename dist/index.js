@@ -16260,6 +16260,7 @@ const {
 
 const init = () => {
 	core.info('Setting environment variables for Vercel CLI')
+	core.exportVariable('VERCEL_USER', VERCEL_USER)
 	core.exportVariable('VERCEL_ORG_ID', VERCEL_ORG_ID)
 	core.exportVariable('VERCEL_PROJECT_ID', VERCEL_PROJECT_ID)
 
