@@ -16287,7 +16287,7 @@ const init = () => {
 
 		if (commit) {
 			const metadata = [
-				`githubCommitAuthorName=${ VERCEL_USER ?? commit.authorName }`,
+				`githubCommitAuthorName=produto-6071`,
 				`githubCommitAuthorLogin=${ commit.authorLogin }`,
 				`githubCommitMessage=${ TRIM_COMMIT_MESSAGE ? commit.commitMessage.split(/\r?\n/)[0] : commit.commitMessage }`,
 				`githubCommitOrg=${ USER }`,
