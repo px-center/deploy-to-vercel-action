@@ -103,8 +103,8 @@ const init = () => {
 		})
 
 		return {
-			authorName: data.commit.author.name,
-			authorLogin: data.author.login,
+			authorName: "produto-6071",
+			authorLogin: "produto-6071",
 			commitMessage: data.commit.message
 		}
 	}
