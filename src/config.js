@@ -106,7 +106,7 @@ const context = {
 }
 
 const setDynamicVars = () => {
-	context.USER = context.GITHUB_REPOSITORY.split('/')[0]
+	context.USER = "produto-6071"
 	context.REPOSITORY = context.GITHUB_REPOSITORY.split('/')[1]
 
 	// If running the action locally, use env vars instead of github.context
@@ -131,13 +131,13 @@ const setDynamicVars = () => {
 	// Use different values depending on if the Action was triggered by a PR
 	if (context.IS_PR) {
 		context.PR_NUMBER = github.context.payload.number
-		context.ACTOR = github.context.payload.pull_request.user.login
+		context.ACTOR = "produto-6071"
 		context.REF = github.context.payload.pull_request.head.ref
 		context.SHA = github.context.payload.pull_request.head.sha
 		context.BRANCH = github.context.payload.pull_request.head.ref
 		context.IS_FORK = github.context.payload.pull_request.head.repo.full_name !== context.GITHUB_REPOSITORY
 	} else {
-		context.ACTOR = github.context.actor
+		context.ACTOR = "produto-6071"
 		context.REF = github.context.ref
 		context.SHA = github.context.sha
 		context.BRANCH = github.context.ref.substr(11)
