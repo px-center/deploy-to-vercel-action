@@ -11,7 +11,7 @@ const context = {
 		required: true
 	}),
 	VERCEL_USER: parser.getInput({
-		key: [ 'GITHUB_USER' ],
+		key: 'VERCEL_USER',
 		required: false,
 	}),
 	VERCEL_TOKEN: parser.getInput({
