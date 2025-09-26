@@ -16028,6 +16028,8 @@ const setDynamicVars = () => {
 		context.SHA = github.context.sha
 		context.BRANCH = github.context.ref.substr(11)
 	}
+
+	console.log({ context });
 }
 
 setDynamicVars()
