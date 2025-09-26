@@ -4,6 +4,7 @@ const { spawn } = require('child_process')
 const execCmd = (command, args, cwd) => {
 	core.debug(`EXEC: "${ command } ${ args }" in ${ cwd || '.' }`)
 	return new Promise((resolve, reject) => {
+		console.log(`${command} ${args}`);
 		const process = spawn(command, args, { cwd })
 		let stdout = ''
 		let stderr = ''
