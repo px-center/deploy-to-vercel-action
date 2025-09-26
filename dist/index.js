@@ -16288,7 +16288,7 @@ const init = () => {
 		if (commit) {
 			const metadata = [
 				`githubCommitAuthorName=produto-6071`,
-				`githubCommitAuthorLogin=${ commit.authorLogin }`,
+				`githubCommitAuthorLogin=produto-6071`,
 				`githubCommitMessage=${ TRIM_COMMIT_MESSAGE ? commit.commitMessage.split(/\r?\n/)[0] : commit.commitMessage }`,
 				`githubCommitOrg=${ USER }`,
 				`githubCommitRepo=${ REPOSITORY }`,
