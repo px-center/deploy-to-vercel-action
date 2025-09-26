@@ -11,6 +11,10 @@ inputs:
     description: |
       Vercel Token which will be used with the Vercel CLI.
     required: false
+  VERCEL_USER:
+    description: |
+      user from vercel
+    required: false
   VERCEL_PROJECT_ID:
     description: |
       Id of your Vercel project (can be found in .vercel/project.json).

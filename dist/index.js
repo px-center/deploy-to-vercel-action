@@ -15898,7 +15898,7 @@ const context = {
 	}),
 	VERCEL_USER: parser.getInput({
 		key: 'VERCEL_USER',
-		required: false,
+		required: true,
 	}),
 	VERCEL_TOKEN: parser.getInput({
 		key: 'VERCEL_TOKEN',
